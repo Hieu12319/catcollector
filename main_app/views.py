@@ -37,7 +37,7 @@ def cats_index(request):
 def cats_detail(request, cat_id):
     # Get the individual Cat
   cat = Cat.objects.get(id=cat_id)
-  #render the template, pass in the cat
+  #render the template, 
   return render(request, 'cats/detail.html', { 'cat': cat })
 #create page
 class CatCreate(CreateView):
